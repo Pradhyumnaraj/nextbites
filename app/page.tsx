@@ -1,5 +1,5 @@
 import Link from "next/link";
-import RecipeCard from "./components/RecipeCard";
+import RecipeGrid from "./components/RecipeGrid";
 import { recipes } from "./data/recipes";
 
 export default function Home() {
@@ -51,11 +51,7 @@ export default function Home() {
           craving.
           </p>
         </div>
-        <div className="recipe-grid">
-          {recipes.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
-          ))}
-        </div>
+        <RecipeGrid recipes={recipes} />
         <p className="recipe-count">
           <span aria-hidden="true">✳</span> A few good things to get you started
         </p>
