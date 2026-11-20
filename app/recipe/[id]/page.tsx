@@ -1,6 +1,10 @@
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
-import { getRecipe } from "../../data/recipes";
+import { getRecipe, recipes } from "../../data/recipes";
+
+export function generateStaticParams() {
+  return recipes.map((recipe) => ({ id: recipe.id }));
+}
 
 export default function RecipePage({
   params,
