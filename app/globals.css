@@ -180,6 +180,53 @@ a {
   padding: 0 21px;
 }
 
+.state-page {
+  display: flex;
+  min-height: 62vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
+.state-mark {
+  display: grid;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 22px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e7edda;
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+}
+
+.state-page .eyebrow {
+  margin-bottom: 12px;
+}
+
+.state-page h1 {
+  max-width: 600px;
+  margin: 0;
+  font-size: clamp(32px, 5vw, 48px);
+  letter-spacing: -2px;
+}
+
+.state-page p:not(.eyebrow) {
+  margin: 14px 0 24px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.state-retry {
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
 .hero-art {
   position: relative;
   display: grid;

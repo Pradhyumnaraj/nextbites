@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
+  basePath: "/nextbites",
+  trailingSlash: true,
   turbopack: {
     root: process.cwd(),
     rules: {

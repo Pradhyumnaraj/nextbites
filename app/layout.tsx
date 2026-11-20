@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NextBites | Find your next favorite",
+  title: "NextBites | Fresh, feel-good recipes",
   description:
     "Fresh, feel-good recipes for every kind of day. Find your next favorite with NextBites.",
 };
